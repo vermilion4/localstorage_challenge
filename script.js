@@ -7,7 +7,22 @@
  function userDetails() {
      let name = prompt('Enter name') || 'not provided';
      let email = prompt('Enter email') || 'not provided';
-     let track = prompt('Enter track:\nFrontend, Backend, DevOps, Design, Fullstack, Others') || 'not provided';
+     let track = prompt('Enter track number:\n1. Frontend\n2. Backend\n3. DevOps\n4. Design\n5. Fullstack\n6. Others') || 'not provided';
+     if (track === '1') {
+            track = 'Frontend';
+        } else if (track === '2') {
+            track = 'Backend';
+        } else if (track === '3') {
+            track = 'DevOps';
+        } else if (track === '4') {
+            track = 'Design';
+        } else if (track === '5') {
+            track = 'Fullstack';
+        } else if (track === '6') {
+            track = 'Others';
+        } else {
+            track = 'not provided/invalid';
+        }
      let isTeamLead = prompt('Is team lead? (yes/no)');
      let isSuspended = prompt('Is suspended? (yes/no)');
      let isExpelled = prompt('Is expelled? (yes/no)');
