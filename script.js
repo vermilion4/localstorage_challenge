@@ -5,9 +5,9 @@
 
  // function to add a new fellow to the database after getting the input from the user
  function userDetails() {
-     let name = prompt('Enter name');
-     let email = prompt('Enter email');
-     let track = prompt('Enter track:\nFrontend, Backend, DevOps, Design, Fullstack, Others');
+     let name = prompt('Enter name') || 'not provided';
+     let email = prompt('Enter email') || 'not provided';
+     let track = prompt('Enter track:\nFrontend, Backend, DevOps, Design, Fullstack, Others') || 'not provided';
      let isTeamLead = prompt('Is team lead? (yes/no)');
      let isSuspended = prompt('Is suspended? (yes/no)');
      let isExpelled = prompt('Is expelled? (yes/no)');
