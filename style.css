@@ -1,0 +1,65 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: tomato;
+    color: #fff;
+}
+
+body {
+    padding-top: 3rem;
+    max-width: 1100px;
+    margin: auto;
+}
+
+a {
+    cursor: pointer;
+}
+
+.links a{
+    display: inline-block;
+    padding: 1rem;
+    border: 1px solid #dddddd;
+    color: #000;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+.links a:hover{
+    background-color: tomato;
+    color: #fff;
+}
+.action{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.delete-btn, .edit-btn{
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border: 1px solid #dddddd;
+    color: #000;
+    text-decoration: none;
+    background-color: rgb(240, 54, 54);
+    color: #fff;
+    transition: 0.2s ease-in-out;
+    border-radius: 5px;
+}
+.edit-btn{
+    background-color: rgb(37, 37, 233);
+}
+.edit-btn:hover{
+    background-color: rgb(0, 0, 66);
+}
+.delete-btn:hover{
+    background-color: rgb(99, 0, 0)
+}
